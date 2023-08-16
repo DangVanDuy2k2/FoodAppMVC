@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">FoodAppMVC</string>
+    <string name="splash_text">The product is programmed and developed by DuyDV</string>
+
+    <string name="nav_home">Trang Chủ</string>
+    <string name="nav_cart">Giỏ Hàng</string>
+    <string name="nav_feedback">Phản Hồi</string>
+    <string name="nav_contact">Liên Hệ</string>
+    <string name="nav_account">Tài Khoản</string>
+    <string name="nav_food">Đồ Ăn</string>
+    <string name="nav_order">Đơn Hàng</string>
+
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="sign_up">Đăng Kí</string>
+    <string name="hint_email">Email...</string>
+    <string name="hint_password">Mật khẩu...</string>
+    <string name="hint_confirm_password">Xác nhận mật khẩu...</string>
+    <string name="hint_old_password">Mật khẩu cũ</string>
+    <string name="hint_new_password">Mật khẩu mới</string>
+    <string name="hint_confirm_new_password">Xác nhận mật khẩu mới</string>
+    <string name="admin">Người quản trị</string>
+    <string name="user">Người dùng</string>
+    <string name="sign_in_account">Đăng Nhập Tài Khoản </string>
+    <string name="sign_up_account">Đăng Kí Tài Khoản </string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="reset_password">Gửi lại mật khẩu</string>
+    <string name="have_not_account">Bạn chưa có tài khoản? </string>
+
+    <string name="msg_email_required">Vui lòng nhập địa chỉ email</string>
+    <string name="msg_password_required">Vui lòng nhập mật khẩu</string>
+    <string name="msg_confirm_password_required">Vui lòng xác nhận lại mật khẩu</string>
+    <string name="msg_email_invalid">Email không hợp lệ</string>
+    <string name="msg_password_invalid">Mật khẩu phải nhiều hơn hoặc bằng 6 kí tự</string>
+    <string name="msg_confirm_password_invalid">Xác nhận mật khẩu không đúng</string>
+    <string name="msg_email_admin_invalid">Email không đúng định dạng dành cho người quản trị</string>
+    <string name="msg_email_user_invalid">Email không đúng định dạng dành cho người dùng</string>
+    <string name="msg_sign_up_fails">Đăng kí không thành công</string>
+    <string name="msg_sign_in_fails">Đăng nhập không thành công</string>
+    <string name="msg_reset_password_successfully">Reset mật khẩu thành công, vui lòng kiểm tra email của bạn</string>
+    <string name="msg_old_password_required">Vui lòng nhập mật khẩu cũ</string>
+    <string name="msg_new_password_required">Vui lòng nhập mật khẩu mới</string>
+    <string name="msg_confirm_new_password_required">Vui lòng xác nhận mật khẩu mới</string>
+    <string name="msg_old_password_invalid">Mật khẩu cũ không hợp lệ</string>
+    <string name="msg_new_password_invalid">Mật khẩu mới không hợp lệ</string>
+    <string name="msg_confirm_new_password_invalid">Xác nhận mật khẩu mới không hợp lệ</string>
+    <string name="msg_change_password_successfuly">Thay đổi mật khẩu thành công</string>
+
+    <string name="order_history">Lịch sử giao hàng</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="report">Báo cáo doanh thu</string>
+
+    <string name="hint_search_food">Tên món ăn</string>
+    <string name="hint_food">Gợi ý món ăn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

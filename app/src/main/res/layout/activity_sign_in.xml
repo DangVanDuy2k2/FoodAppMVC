@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity">
+
+    <LinearLayout
+        android:padding="@dimen/define_dimen_16"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/sign_in"
+            android:textSize="@dimen/text_size_huge"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/define_dimen_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_email_sign_in"
+            android:hint="@string/hint_email"
+            android:padding="@dimen/define_dimen_12"
+            android:background="@drawable/bg_edt_conner_6"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_password_sign_in"
+            android:hint="@string/hint_password"
+            android:padding="@dimen/define_dimen_12"
+            android:background="@drawable/bg_edt_conner_6"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="@dimen/define_dimen_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_marginTop="@dimen/define_dimen_20"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rad_admin"
+                android:text="@string/admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rad_user"
+                android:text="@string/user"
+                android:checked="true"
+                android:layout_marginStart="@dimen/define_dimen_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_in"
+            android:layout_marginTop="@dimen/define_dimen_20"
+            android:text="@string/sign_in_account"
+            android:background="@drawable/bg_btn_main_conner_8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:padding="@dimen/define_dimen_10"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sign_up"
+        android:padding="@dimen/define_dimen_16"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/have_not_account"
+            android:textColor="@color/colorTextSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/sign_up"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
