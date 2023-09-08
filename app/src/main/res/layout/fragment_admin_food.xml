@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragment.admin.AdminFoodFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/define_dimen_10"
+        android:background="@drawable/bg_shape_white_conner_gray_6"
+        android:padding="@dimen/define_dimen_2">
+
+        <EditText
+            android:id="@+id/edt_search_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_search"
+            android:background="@color/white"
+            android:hint="@string/hint_search_food"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="@dimen/define_dimen_6"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_small"
+            tools:ignore="Autofill" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/define_dimen_6"
+            android:src="@drawable/ic_search_admin"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_food"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@+id/layout_search"
+        android:layout_marginStart="@dimen/define_dimen_10"
+        android:layout_marginBottom="@dimen/define_dimen_10" />
 
-</FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/define_dimen_12"
+        android:layout_marginBottom="@dimen/define_dimen_12"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="@color/teal_700"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

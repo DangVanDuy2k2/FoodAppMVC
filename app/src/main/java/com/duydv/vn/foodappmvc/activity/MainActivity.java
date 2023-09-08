@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
         setContentView(mActivityMainBinding.getRoot());
 
         //Khong cho vuot man hinh
-        mActivityMainBinding.viewPager.setUserInputEnabled(true);
+        mActivityMainBinding.viewPager.setUserInputEnabled(false);
 
         ViewPagerAdapter mViewPagerAdapter = new ViewPagerAdapter(this);
         mActivityMainBinding.viewPager.setAdapter(mViewPagerAdapter);
@@ -74,7 +74,6 @@ public class MainActivity extends BaseActivity {
     public void showToolbar(boolean isHome, String title){
         if(isHome){
             mActivityMainBinding.toolbar.layoutToolbar.setVisibility(View.GONE);
-            return;
         }else{
             mActivityMainBinding.toolbar.layoutToolbar.setVisibility(View.VISIBLE);
             mActivityMainBinding.toolbar.txtTitle.setText(title);

@@ -44,6 +44,18 @@
     <string name="msg_new_password_invalid">Mật khẩu mới không hợp lệ</string>
     <string name="msg_confirm_new_password_invalid">Xác nhận mật khẩu mới không hợp lệ</string>
     <string name="msg_change_password_successfuly">Thay đổi mật khẩu thành công</string>
+    <string name="msg_order_required">Vui lòng nhập đầy đủ thông tin khách hàng</string>
+    <string name="msg_order_successfully">Đặt hàng thành công</string>
+    <string name="msg_feedback_required">Vui lòng nhập thông tin phản hồi</string>
+    <string name="msg_send_feedback_successfully">Gửi phản hồi thành công</string>
+    <string name="msg_onCancelled">Lấy dữ liệu không thành công</string>
+    <string name="msg_edt_required">Vui lòng nhập đầy đủ thông tin</string>
+    <string name="msg_add_food_succesfuly">Thêm món ăn thành công</string>
+    <string name="msg_update_food_succesfuly">Cập nhật món ăn thành công</string>
+    <string name="msg_delete_food_succesfuly">Xóa món ăn thành công</string>
+
+    <string name="title_dialog_delete_food">Xóa món ăn</string>
+    <string name="message_dialog_confirm_delete_food">Bạn chắc chắn muốn xóa món ăn này?</string>
 
     <string name="order_history">Lịch sử giao hàng</string>
     <string name="change_password">Đổi mật khẩu</string>
@@ -52,6 +64,62 @@
 
     <string name="hint_search_food">Tên món ăn</string>
     <string name="hint_food">Gợi ý món ăn</string>
+    <string name="description">Mô tả</string>
+    <string name="price">Giá: </string>
+    <string name="food_detail">Chi tiết món ăn</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="added_to_cart">Đã thêm vào giỏ hàng</string>
+    <string name="popular">Phổ biến</string>
+
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="one">1</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="sum_price">Tổng tiền:</string>
+    <string name="price_default">0 VND</string>
+    <string name="order">Đặt hàng</string>
+    <string name="delete">Xóa</string>
+
+    <string name="order_detail">Chi tiết đơn hàng</string>
+    <string name="payment_method">Phương thức thanh toán</string>
+    <string name="cash">Tiền mặt</string>
+    <string name="fullname">Họ và tên (*)</string>
+    <string name="phone_number">Số điện thoại (*)</string>
+    <string name="address">Địa chỉ (*)</string>
+    <string name="feedback_comment">Bình luận (*)</string>
+    <string name="send_feedback">Gửi phản hồi</string>
+
+    <string name="label_id">Mã đơn hàng:</string>
+    <string name="label_name">Họ tên:</string>
+    <string name="label_phone">Số điện thoại:</string>
+    <string name="label_address">Địa chỉ nhận:</string>
+    <string name="label_price">Tổng tiền:</string>
+    <string name="label_date">Ngày đặt hàng:</string>
+    <string name="label_payment">Thanh toán:</string>
+    <string name="label_menu">Thực đơn:</string>
+
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="confirm">Xác nhận</string>
+
+    <string name="food_name">Tên món ăn(*)</string>
+    <string name="food_description">Mô tả món ăn(*)</string>
+    <string name="food_price">Giá món ăn(*)</string>
+    <string name="food_vnd">000 VND</string>
+    <string name="food_sale">Khuyến mại(*)</string>
+    <string name="food_percent">%</string>
+    <string name="food_image">Link ảnh món ăn(*)</string>
+    <string name="add">Thêm</string>
+    <string name="update">Cập nhật</string>
+
+    <string name="add_food">Thêm món ăn</string>
+    <string name="update_food">Cập nhật món ăn</string>
+
+    <string name="date_start">Từ ngày:</string>
+    <string name="date_end">Đến ngày:</string>
+
+    <string name="total_revenue">Tổng doanh thu:</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

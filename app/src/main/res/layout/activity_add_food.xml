@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.AddFoodActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/define_dimen_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/colorTextSecond"
+            android:text="@string/food_name"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_4"
+            android:background="@drawable/bg_shape_white_conner_gray_6"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/define_dimen_12"
+            android:textColor="@color/colorTextSecond"
+            android:textSize="@dimen/text_size_small"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/colorTextSecond"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:text="@string/food_description"/>
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/define_dimen_140"
+            android:layout_marginTop="@dimen/define_dimen_4"
+            android:background="@drawable/bg_shape_white_conner_gray_6"
+            android:imeOptions="actionNext"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/define_dimen_12"
+            android:textColor="@color/colorTextSecond"
+            android:textSize="@dimen/text_size_small"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/colorTextSecond"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:text="@string/food_price"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_4"
+            android:background="@drawable/bg_shape_white_conner_gray_6"
+            android:padding="@dimen/define_dimen_12">
+
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/define_dimen_10"
+                android:layout_toStartOf="@+id/tv_currency"
+                android:background="@color/white"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_small"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
+
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/food_vnd"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/colorTextSecond"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:text="@string/food_sale"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_4"
+            android:background="@drawable/bg_shape_white_conner_gray_6"
+            android:padding="@dimen/define_dimen_12">
+
+            <EditText
+                android:id="@+id/edt_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/define_dimen_10"
+                android:layout_toStartOf="@+id/tv_percent"
+                android:background="@color/white"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="@color/purple"
+                android:textSize="@dimen/text_size_small"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor"/>
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/food_percent"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/colorTextSecond"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:text="@string/food_image"/>
+
+        <EditText
+            android:id="@+id/edt_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_4"
+            android:background="@drawable/bg_shape_white_conner_gray_6"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="@dimen/define_dimen_12"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_small"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <CheckBox
+            android:id="@+id/chk_popular"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:padding="@dimen/define_dimen_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular" />
+
+        <TextView
+            android:id="@+id/txt_add_or_edit"
+            android:layout_marginTop="@dimen/define_dimen_20"
+            android:background="@drawable/bg_shape_red_conner_8"
+            android:text="@string/add"
+            android:padding="@dimen/define_dimen_12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xnormal"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

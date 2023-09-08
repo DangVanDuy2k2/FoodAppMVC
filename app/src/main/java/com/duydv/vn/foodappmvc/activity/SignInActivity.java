@@ -2,7 +2,6 @@ package com.duydv.vn.foodappmvc.activity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -49,7 +48,7 @@ public class SignInActivity extends BaseActivity {
             Toast.makeText(SignInActivity.this, getString(R.string.msg_email_required), Toast.LENGTH_SHORT).show();
         }else if (StringUtils.isEmty(password)) {
             Toast.makeText(SignInActivity.this, getString(R.string.msg_password_required), Toast.LENGTH_SHORT).show();
-        }else if (!StringUtils.isValidEmail(email)) {
+        }else if (StringUtils.isValidEmail(email)) {
             Toast.makeText(SignInActivity.this, getString(R.string.msg_email_invalid), Toast.LENGTH_SHORT).show();
         }else if (password.length() < 6) {
             Toast.makeText(SignInActivity.this, getString(R.string.msg_password_invalid), Toast.LENGTH_SHORT).show();

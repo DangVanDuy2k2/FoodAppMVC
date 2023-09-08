@@ -21,7 +21,7 @@ public class AdminActivity extends BaseActivity {
         setContentView(mActivityAdminBinding.getRoot());
 
         //Khong cho vuot man hinh
-        mActivityAdminBinding.viewPager.setUserInputEnabled(true);
+        mActivityAdminBinding.viewPager.setUserInputEnabled(false);
 
         AdminViewPagerAdapter mAdminViewPagerAdapter = new AdminViewPagerAdapter(this);
         mActivityAdminBinding.viewPager.setAdapter(mAdminViewPagerAdapter);

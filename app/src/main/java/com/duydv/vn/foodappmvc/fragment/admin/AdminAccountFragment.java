@@ -3,7 +3,6 @@ package com.duydv.vn.foodappmvc.fragment.admin;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +12,7 @@ import com.bumptech.glide.Glide;
 import com.duydv.vn.foodappmvc.R;
 import com.duydv.vn.foodappmvc.activity.AdminActivity;
 import com.duydv.vn.foodappmvc.activity.ChangePasswordActivity;
+import com.duydv.vn.foodappmvc.activity.ReportRevenueActivity;
 import com.duydv.vn.foodappmvc.activity.SignInActivity;
 import com.duydv.vn.foodappmvc.constant.GlobalFunction;
 import com.duydv.vn.foodappmvc.databinding.FragmentAdminAccountBinding;
@@ -30,11 +30,7 @@ public class AdminAccountFragment extends BaseFragment {
                 .inflate(inflater, container, false);
 
         showInforUser();
-
-        mFragmentAdminAccountBinding.layoutLogout.setOnClickListener(view -> onClickLogout());
-        mFragmentAdminAccountBinding.layoutChangePassword.setOnClickListener(view ->
-                GlobalFunction.startActivity(getActivity(), ChangePasswordActivity.class));
-
+        initListener();
 
         return mFragmentAdminAccountBinding.getRoot();
     }
@@ -53,6 +49,13 @@ public class AdminAccountFragment extends BaseFragment {
         mFragmentAdminAccountBinding.txtEmail.setText(DataStoreManager.getUser().getEmail());
         Glide.with(getActivity()).load(DataStoreManager.getUser().getImage()).error(R.drawable.ic_avatar_default)
                 .into(mFragmentAdminAccountBinding.imgAvatar);
+    }
+
+    private void initListener(){
+        mFragmentAdminAccountBinding.layoutLogout.setOnClickListener(view -> onClickLogout());
+        mFragmentAdminAccountBinding.layoutChangePassword.setOnClickListener(view ->
+                GlobalFunction.startActivity(getActivity(), ChangePasswordActivity.class));
+        mFragmentAdminAccountBinding.layoutReport.setOnClickListener(view -> GlobalFunction.startActivity(getActivity(), ReportRevenueActivity.class));
     }
 
     private void onClickLogout(){

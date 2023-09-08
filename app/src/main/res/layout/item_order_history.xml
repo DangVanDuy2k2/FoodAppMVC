@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="@dimen/define_dimen_10"
+    android:layout_marginBottom="@dimen/define_dimen_10"
+    app:cardCornerRadius="@dimen/define_dimen_6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_id"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextSecond"
+                android:text="@string/label_id"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_id_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_id"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_name"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:text="@string/label_name"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_name_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_name"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_phone"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/label_phone"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_phone_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_phone"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_address"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:text="@string/label_address"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_address_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_address"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_menu"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:text="@string/label_menu"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_menu_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_menu"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_date"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/label_date"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_date_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_date"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/define_dimen_10"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/label_sum_price"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sum_price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_sum_price_order_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_sum_price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/define_dimen_5">
+
+            <TextView
+                android:id="@+id/label_payment_method"
+                android:layout_width="@dimen/define_dimen_100"
+                android:layout_height="wrap_content"
+                android:text="@string/label_payment"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/txt_payment_method_order_history"
+                android:text="@{Order.getStringPaymentMethod(txtPaymentMethod)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/define_dimen_5"
+                android:layout_toEndOf="@+id/label_payment_method"
+                android:textColor="@color/colorTextSecond"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

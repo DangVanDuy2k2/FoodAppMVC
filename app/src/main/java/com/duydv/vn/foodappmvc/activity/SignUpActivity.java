@@ -47,7 +47,7 @@ public class SignUpActivity extends BaseActivity {
             Toast.makeText(SignUpActivity.this, getString(R.string.msg_password_required), Toast.LENGTH_SHORT).show();
         }else if (StringUtils.isEmty(confirPassword)) {
             Toast.makeText(SignUpActivity.this, getString(R.string.msg_confirm_password_required), Toast.LENGTH_SHORT).show();
-        } else if (!StringUtils.isValidEmail(email)) {
+        } else if (StringUtils.isValidEmail(email)) {
             Toast.makeText(SignUpActivity.this, getString(R.string.msg_email_invalid), Toast.LENGTH_SHORT).show();
         }else if (password.length() < 6) {
             Toast.makeText(SignUpActivity.this, getString(R.string.msg_password_invalid), Toast.LENGTH_SHORT).show();

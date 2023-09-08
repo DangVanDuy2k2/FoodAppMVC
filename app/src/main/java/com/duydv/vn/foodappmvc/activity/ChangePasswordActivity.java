@@ -5,12 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.view.View;
 import android.widget.Toast;
 
 import com.duydv.vn.foodappmvc.R;
-import com.duydv.vn.foodappmvc.constant.Constant;
 import com.duydv.vn.foodappmvc.databinding.ActivityChangePasswordBinding;
 import com.duydv.vn.foodappmvc.model.User;
 import com.duydv.vn.foodappmvc.pref.DataStoreManager;
@@ -47,7 +44,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
             Toast.makeText(ChangePasswordActivity.this, getString(R.string.msg_new_password_required), Toast.LENGTH_SHORT).show();
         }else if (StringUtils.isEmty(confirmPassword)) {
             Toast.makeText(ChangePasswordActivity.this, getString(R.string.msg_confirm_new_password_required), Toast.LENGTH_SHORT).show();
-        } else if (!StringUtils.isValidEmail(oldPassword) && !oldPassword.equals(DataStoreManager.getUser().getPassword())) {
+        } else if (StringUtils.isValidEmail(oldPassword) && !oldPassword.equals(DataStoreManager.getUser().getPassword())) {
             Toast.makeText(ChangePasswordActivity.this, getString(R.string.msg_email_invalid), Toast.LENGTH_SHORT).show();
         }else if (newPassword.length() < 6) {
             Toast.makeText(ChangePasswordActivity.this, getString(R.string.msg_new_password_invalid), Toast.LENGTH_SHORT).show();

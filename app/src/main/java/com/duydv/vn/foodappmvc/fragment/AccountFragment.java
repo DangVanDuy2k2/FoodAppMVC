@@ -12,8 +12,10 @@ import com.bumptech.glide.Glide;
 import com.duydv.vn.foodappmvc.R;
 import com.duydv.vn.foodappmvc.activity.ChangePasswordActivity;
 import com.duydv.vn.foodappmvc.activity.MainActivity;
+import com.duydv.vn.foodappmvc.activity.OrderHistoryActivity;
 import com.duydv.vn.foodappmvc.activity.SignInActivity;
 import com.duydv.vn.foodappmvc.constant.GlobalFunction;
+import com.duydv.vn.foodappmvc.database.FoodDatabase;
 import com.duydv.vn.foodappmvc.databinding.FragmentAccountBinding;
 import com.duydv.vn.foodappmvc.pref.DataStoreManager;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,6 +32,9 @@ public class AccountFragment extends BaseFragment {
         mFragmentAccountBinding.layoutLogout.setOnClickListener(view -> onClickLogout());
         mFragmentAccountBinding.layoutChangePassword.setOnClickListener(view ->
                 GlobalFunction.startActivity(getActivity(), ChangePasswordActivity.class));
+
+        mFragmentAccountBinding.layoutOrderHistory.setOnClickListener(view ->
+                GlobalFunction.startActivity(getActivity(), OrderHistoryActivity.class));
 
         return mFragmentAccountBinding.getRoot();
     }
@@ -57,6 +62,7 @@ public class AccountFragment extends BaseFragment {
         }
         FirebaseAuth.getInstance().signOut();
         DataStoreManager.setUser(null);
+        FoodDatabase.getInstance(getContext()).foodDAO().deleteAllFood();
         GlobalFunction.startActivity(getActivity(), SignInActivity.class);
         getActivity().finishAffinity();
     }

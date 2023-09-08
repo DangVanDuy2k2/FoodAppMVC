@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="gone"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
@@ -16,7 +18,7 @@
             android:id="@+id/edtSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_white_shape_conner_red_30"
+            android:background="@drawable/bg_shape_white_conner_red_30"
             android:hint="@string/hint_search_food"
             android:imeOptions="actionSearch"
             android:inputType="text"
@@ -49,7 +51,7 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:id="@+id/food_popular"
+            android:id="@+id/layout_food_popular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -57,7 +59,7 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewpager"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="match_parent"/>
 
             <me.relex.circleindicator.CircleIndicator3
                 android:id="@+id/indicator3"
