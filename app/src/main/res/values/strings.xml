@@ -58,6 +58,7 @@
     <string name="message_dialog_confirm_delete_food">Bạn chắc chắn muốn xóa món ăn này?</string>
 
     <string name="order_history">Lịch sử giao hàng</string>
+    <string name="order_history2">Lịch sử mua hàng</string>
     <string name="change_password">Đổi mật khẩu</string>
     <string name="logout">Đăng xuất</string>
     <string name="report">Báo cáo doanh thu</string>

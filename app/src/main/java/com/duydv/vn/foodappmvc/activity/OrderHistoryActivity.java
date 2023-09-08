@@ -42,7 +42,7 @@ public class OrderHistoryActivity extends BaseActivity {
         mActivityOrderHistoryBinding.toolbar.layoutToolbar.setVisibility(View.VISIBLE);
         mActivityOrderHistoryBinding.toolbar.imgBack.setVisibility(View.VISIBLE);
         mActivityOrderHistoryBinding.toolbar.imgCart.setVisibility(View.GONE);
-        mActivityOrderHistoryBinding.toolbar.txtTitle.setText(getString(R.string.order_history));
+        mActivityOrderHistoryBinding.toolbar.txtTitle.setText(getString(R.string.order_history2));
     }
 
     private void getListOrderFromFirebase() {

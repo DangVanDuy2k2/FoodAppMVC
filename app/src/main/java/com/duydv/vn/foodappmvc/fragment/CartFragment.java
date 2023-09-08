@@ -69,10 +69,10 @@ public class CartFragment extends BaseFragment {
         FoodInCartAdapter mFoodInCartAdapter = new FoodInCartAdapter(mListFoodInCart, new IManagerFoodListener() {
             @Override
             public void onClickUpdateFood(Food food) {
+                FoodDatabase.getInstance(getContext()).foodDAO().updateFood(food);
                 int sumPrice = FoodDatabase.getInstance(getContext()).foodDAO().getSumPrice();
                 String strSumPrice = sumPrice + Constant.VND;
                 mFragmentCartBinding.txtSumPriceInCart.setText(strSumPrice);
-                FoodDatabase.getInstance(getContext()).foodDAO().updateFood(food);
             }
 
             @Override

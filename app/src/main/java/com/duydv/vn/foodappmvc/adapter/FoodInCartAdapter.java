@@ -70,7 +70,6 @@ public class FoodInCartAdapter extends RecyclerView.Adapter<FoodInCartAdapter.Fo
 
             food.setCount(newCount);
             food.setSum_price(newSumPrice);
-            FoodDatabase.getInstance(view.getContext()).foodDAO().updateFood(food);
 
             mIManagerFoodListener.onClickUpdateFood(food);
         });
